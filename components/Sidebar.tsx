@@ -5,8 +5,6 @@ import { twMerge } from "tailwind-merge";
 import { useMemo } from "react";
 import { HiHome } from "react-icons/hi";
 import { BiSearch } from "react-icons/bi";
-import Image from "next/image";
-import Link from "next/link";
 
 import { Song } from "@/types/types";
 
