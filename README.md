@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎵 Spotify Clone
 
-## Getting Started
+> ⚠️ **ПРОЕКТ АРХИВИРОВАН И НЕ ПОДДЕРЖИВАЕТСЯ**
+> 
+> Данный проект больше не разрабатывается и не обновляется.
+> 
+> **Важно:** Часть файлов проекта была безвозвратно утеряна и не попала в репозиторий. Восстановление полной функциональности невозможно.
 
-First, run the development server:
+---
+
+## 📋 О проекте
+
+Клон Spotify, созданный с использованием Next.js. Проект разрабатывался как полноценный музыкальный стриминговый сервис с планами дальнейшей монетизации.
+
+### Технологический стек
+
+- **Framework:** [Next.js](https://nextjs.org) (App Router)
+- **Язык:** TypeScript
+- **Стилизация:** Tailwind CSS
+- **База данных:** Supabase
+- **Платежи:** Stripe
+- **Аутентификация:** Supabase Auth
+- **Шрифты:** [Geist](https://vercel.com/font) через next/font
+
+---
+
+## ⚠️ Статус проекта
+
+**ПРОЕКТ ЗАМОРОЖЕН**
+
+К сожалению, разработка проекта была прекращена по следующим причинам:
+
+- Утеряны критически важные файлы, которые не были добавлены в систему контроля версий
+- Отсутствует документация по утерянным компонентам
+- Невозможно восстановить полную функциональность проекта
+
+Репозиторий сохранён в архивных целях и как пример незавершённой работы.
+
+---
+
+## 🚀 Быстрый старт (для ознакомления)
+
+> **Внимание:** Из-за утерянных файлов проект может работать некорректно или не запускаться вообще.
+
+### Установка зависимостей
+
+```bash
+npm install
+# или
+yarn install
+# или
+pnpm install
+```
+
+### Запуск dev-сервера
 
 ```bash
 npm run dev
-# or
+# или
 yarn dev
-# or
+# или
 pnpm dev
-# or
+# или
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Откройте [http://localhost:3000](http://localhost:3000) в браузере.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Структура проекта
 
-## Learn More
+```
+spotify-clone/
+├── actions/              # Серверные действия
+│   ├── getLikedSongs.ts
+│   ├── getSongs.ts
+│   ├── getSongsByTitile.ts
+│   └── getSongsByUserId.ts
+├── app/                  # Next.js App Router
+│   ├── (site)/          # Главная страница
+│   ├── account/         # Страница аккаунта
+│   ├── liked/           # Понравившиеся треки
+│   ├── search/          # Поиск
+│   ├── globals.css
+│   └── layout.tsx
+├── components/          # React компоненты
+│   ├── AuthModal.tsx
+│   ├── Header.tsx
+│   ├── Library.tsx
+│   ├── Player.tsx
+│   ├── Sidebar.tsx
+│   └── ... (другие компоненты)
+├── hooks/               # Кастомные React хуки
+│   ├── useAuthModal.ts
+│   ├── usePlayer.ts
+│   ├── useUser.tsx
+│   └── ... (другие хуки)
+├── libs/                # Библиотеки и утилиты
+│   ├── helpers.ts
+│   ├── stripe.ts
+│   ├── stripeClient.ts
+│   └── supabaseAdmin.ts
+├── providers/           # Context провайдеры
+│   ├── ModalProvider.tsx
+│   ├── SupabaseProvider.tsx
+│   ├── ToasterProvider.tsx
+│   └── UserProvider.tsx
+├── public/              # Статические файлы
+│   ├── images/
+│   └── logo.svg
+├── types/               # TypeScript типы
+│   ├── types_db.ts
+│   └── types.ts
+├── middleware.ts
+├── next.config.ts
+├── package.json
+├── tailwind.config.ts
+└── tsconfig.json
+```
 
-To learn more about Next.js, take a look at the following resources:
+> ⚠️ Некоторые файлы и директории отсутствуют из-за потери данных
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 👤 Автор
 
-## Deploy on Vercel
+[@Pepega4a](https://github.com/Pepega4a)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<div align="center">
+  
+**Проект заархивирован • Последнее обновление: 2025**
+
+</div>
